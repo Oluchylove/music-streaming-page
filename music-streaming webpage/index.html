@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Music-Streaming Webpage</title>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container">
+            <div class="menubar">
+                <div class="menubar-nav">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-record-fill record1" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-record-fill record2" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-record-fill record3" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>
+                        </svg>
+                    </div>
+                    
+                    
+                
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" id="mobile-icon">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                    </div>
+                </div>
+
+                <p class="menu-subtitle">MENU</p>
+                <div class="menu-subtitle-cont">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door menu-icon" viewBox="0 0 16 16">
+                        <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+                    </svg>
+                    <span>Discover</span>
+                </div>
+                <div class="menu-subtitle-cont">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-headphones menu-icon" viewBox="0 0 16 16">
+                        <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z"/>
+                      </svg>
+                    <span>Trending</span>
+                </div>
+                <div class="menu-subtitle-cont">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-music-note-beamed menu-icon" viewBox="0 0 16 16">
+                        <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                        <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                        <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+                      </svg>
+                    <span>Streaming</span>
+                </div>
+
+                <p class="menu-subtitle">PLAYLIST</p>
+                <div id="playlist-main">
+                    <div class="playlist-cont">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-circle menu-icon" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                        </svg>
+                        <span>Christmas Vibes</span>
+                    </div>
+                    <div class="playlist-cont">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-circle menu-icon" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                        </svg>
+                        <span>Bob MArley Speed</span>
+                    </div>
+                    <div class="playlist-cont">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-circle menu-icon" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                        </svg>
+                        <span>ACDC Live 2008</span>
+                    </div>
+
+                    <div class="Addplaylist" id="display">
+                        
+                    </div>
+                </div>
+
+                <div id="playlistform-wrapper">
+                    <form class="MyForm">
+                        <input type="text" id="playlistform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2"  viewBox="0 0 16 16" id="update" onclick="updateIcon()">
+                            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                          </svg>
+                          <i class="bi bi-x" id="hide" onclick="hideIcon()"></i>
+                          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"  viewBox="0 0 16 16" id="hide" onclick="hideIcon()">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                          </svg> -->
+                    </form>
+                </div>
+
+                <div  class="menu-btnholder">
+                    <button class="menu-btn" id="bnt" onclick="show()">
+                        ADD PLAYLIST
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle btn-icon" viewBox="0 0 16 16">
+                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                        </svg>
+                    </button>
+                </div>
+
+
+                <p class="menu-subtitle">BOOKMARKS</p>
+                <div id="bookmark-wrapper">
+                    <div class="bookmark-cont">
+                        <div>
+                            <img src="./Assets/images/image1.jpg" class="bookmark-img">
+                        </div>
+                        <div>
+                            <p class="bookmark-title">Ooops..I Did It Again</p>
+                            <span class="bookmark-artist">Britney Spears</span>
+                        </div>
+                    </div>
+                    <div class="bookmark-cont1">
+                        <div>
+                            <img src="./Assets/images/image2.jpg" class="bookmark-img">
+                        </div>  
+                        <div>
+                            <p class="bookmark-title">Sorry Seems To Be The Hardest Word </p>
+                            <p class="bookmark-artist">Blue & Elton John</p>
+                        </div>
+                    </div>
+                    <div class="bookmark-cont">
+                        <div>
+                            <img src="./Assets/images/image3.jpg" class="bookmark-img">
+                        </div>
+                        <div>
+                            <p class="bookmark-title">Birds</p>
+                            <span class="bookmark-artist">Imagine Dragons</span>
+                        </div>
+                    </div>
+                    <div class="bookmark-cont">
+                        <div>
+                            <img src="./Assets/images/image4.jpg" class="bookmark-img">
+                        </div>
+                        <div>
+                            <p class="bookmark-title">Shape of My Heat</p>
+                            <span class="bookmark-artist">Sting</span>
+                        </div>
+                    </div>
+
+                    <div class="hidden" id="bookmark-sub">
+                        <div class="bookmark-cont">
+                            <div>
+                                <img src="./Assets/images/image1.jpg" class="bookmark-img">
+                            </div>
+                            <div>
+                                <p class="bookmark-title">Ooops..I Did It Again</p>
+                                <span class="bookmark-artist">Britney Spears</span>
+                            </div>
+                        </div>
+                        <div class="bookmark-cont">
+                            <div>
+                                <img src="./Assets/images/image2.jpg" class="bookmark-img">
+                            </div>  
+                            <div>
+                                <p class="bookmark-title">Sorry Seems To Be The Hardest Word </p>
+                                <p class="bookmark-artist">Blue & Elton John</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-button" id="menu-button">
+                    <button   id="load" onclick="load()">
+                        <p class="">Load More</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-down-short bookmark-icon" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="menu-button2">
+                    <button class=" load1"  id="load1">
+                        <p class="">Load More</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-down-short bookmark-icon" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+
+
+            <div class="page-main">
+                <div class="page-main-nav">
+                    <div>
+                        <p>Discover</p>
+                    </div>
+                    <div class="page-main-cont">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-three-dots tab-icon" viewBox="0 0 16 16">
+                            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-rss tab-icon" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                            <path d="M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-3-8.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell tab-icon" viewBox="0 0 16 16">
+                            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                        </svg>
+                        <img src="./Assets/images/image6.jpg" class="page-main-img">
+                    </div>
+                </div>
+
+                <p class="menu-subtitle">RECENTLY PLAYED</p>
+                <div class="favorite">
+                    <div>
+                        <img src="./Assets/images/image7.jpg" class="favorite-img">
+                        <p class="favorite-title">P.I.M.P</p>
+                        <span class="favorite-artist">50 Cents. Snoop Dogg</span>
+                    </div>
+                    
+                    <div>
+                        <img src="./Assets/images/image8.jpg" class="favorite-img">
+                        <p class="favorite-title">Cold Heart (PNAU Remix)</p>
+                        <span class="favorite-artist">Elton John. Dua Lipa</span>
+                    </div>
+                    <div>
+                        <img src="./Assets/images/image9.jpg" class="favorite-img">
+                        <p class="favorite-title">Dilemma</p>
+                        <span class="favorite-artist">Nelly, Ft. Kelly</span>
+                    </div>
+                    <div>
+                        <img src="./Assets/images/image10.jpg" class="favorite-img">
+                        <p class="favorite-title">Thunderstrack</p>
+                        <span class="favorite-artist">ACDC</span>
+                    </div>
+
+                    <div>
+                        <img src="./Assets/images/image11.jpg" class="favorite-img">
+                        <div>
+                        <div class="favorite-sub"> 
+                            <p class="favorite-text">View All</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                              </svg>
+                        </div>
+                        <span class="favorite-text1">42 Tracks</span>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="menu-subtitle">TOP 100 BILLBOARD</p>
+                <div>
+                    <div class="library" data-src="./Assets/audio/Nathaniel Bassey - This God Is Too Good [Feat. Micah Stampley].mp3">
+                        <div class="library-cont">
+
+                            <div class="library-sub">
+                                <div class="library-index">#1</div>
+
+                                <div>
+                                    <img src="./Assets/images/image8.jpg" class="library-img">
+                                </div>
+                                <div>
+                                <p class="library-text1">Despacito</p>
+                                <p class="library-text2">Despacito</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="library-text-main">
+                            Despacito
+                        </div>
+                        <div class="library-component">
+                            <div class="library-recordMain">
+                                <i class="bi bi-music-note-beamed"></i>
+                                1234567890
+                            </div>
+                            <div>
+                                <i class="bi bi-clock"></i>
+                                0:33
+                            </div>
+
+                        </div>
+                        <div>
+                            <i class="bi bi-heart library-icon"></i>
+                            <i class="bi bi-three-dots-vertical"></i>
+                        </div>
+                    </div>
+
+                    <div class="library" data-src="./Assets/audio/Hallelujah Eh - Nathaniel Bassey.mp3">
+                        <div class="library-cont">
+
+                            <div class="library-sub">
+                                <div class="library-index">#2</div>
+
+                                <div>
+                                    <img src="./Assets/images/image9.jpg" class="library-img">
+                                </div>
+                                <div>
+                                <p class="library-text1">Despacito</p>
+                                <p class="library-text2">Despacito</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="library-text-main">
+                            Despacito
+                        </div>
+                        <div class="library-component">
+                            <div class="library-recordMain">
+                                <i class="bi bi-music-note-beamed"></i>
+                                1234567890
+                            </div>
+                            <div>
+                                <i class="bi bi-clock"></i>
+                                0:33
+                            </div>
+
+                        </div>
+                        <div>
+                            <i class="bi bi-heart library-icon"></i>
+                            <i class="bi bi-three-dots-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="library" data-src="./Assets/audio/Eben_No_One_Like_You_Ft_Nathaniel_Bassey_9jaflaver.com_.mp3">
+                        <div class="library-cont">
+
+                            <div class="library-sub">
+                                <div class="library-index">#3</div>
+
+                                <div>
+                                    <img src="./Assets/images/image8.jpg" class="library-img">
+                                </div>
+                                <div>
+                                <p class="library-text1">Despacito</p>
+                                <p class="library-text2">Despacito</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="library-text-main">
+                            Despacito
+                        </div>
+                        <div class="library-component">
+                            <div class="library-recordMain">
+                                <i class="bi bi-music-note-beamed"></i>
+                                1234567890
+                            </div>
+                            <div>
+                                <i class="bi bi-clock"></i>
+                                0:33
+                            </div>
+
+                        </div>
+                        <div>
+                            <i class="bi bi-heart library-icon"></i>
+                            <i class="bi bi-three-dots-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="library" data-src="./Assets/audio/by Nathaniel Bassey and Lovesong - Casting Crowns by Nathaniel Bassey and Lovesong.mp3">
+                        <div class="library-cont">
+
+                            <div class="library-sub">
+                                <div class="library-index">#4</div>
+
+                                <div>
+                                    <img src="./Assets/images/image8.jpg" class="library-img">
+                                </div>
+                                <div>
+                                <p class="library-text1">Despacito</p>
+                                <p class="library-text2">Despacito</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="library-text-main">
+                            Despacito
+                        </div>
+                        <div class="library-component">
+                            <div class="library-recordMain">
+                                <i class="bi bi-music-note-beamed"></i>
+                                1234567890
+                            </div>
+                            <div>
+                                <i class="bi bi-clock"></i>
+                                0:33
+                            </div>
+
+                        </div>
+                        <div>
+                            <i class="bi bi-heart library-icon"></i>
+                            <i class="bi bi-three-dots-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="library" data-src="./Assets/audio/[Waploaded]_Tatiana_Manaois_-_Like_You-1518158965.mp3">
+                        <div class="library-cont">
+
+                            <div class="library-sub">
+                                <div class="library-index">#5</div>
+
+                                <div>
+                                    <img src="./Assets/images/image8.jpg" class="library-img">
+                                </div>
+                                <div>
+                                <p class="library-text1">Despacito</p>
+                                <p class="library-text2">Despacito</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="library-text-main">
+                            Despacito
+                        </div>
+                        <div class="library-component">
+                            <div class="library-recordMain">
+                                <i class="bi bi-music-note-beamed"></i>
+                                1234567890
+                            </div>
+                            <div>
+                                <i class="bi bi-clock"></i>
+                                0:33
+                            </div>
+
+                        </div>
+                        <div>
+                            <i class="bi bi-heart library-icon"></i>
+                            <i class="bi bi-three-dots-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="library" data-src="./Assets/audio/Nathaniel-Bassey-The-King-Is-Coming-Audio-(JustNaija.com).mp3">
+                        <div class="library-cont">
+
+                            <div class="library-sub">
+                                <div class="library-index">#6</div>
+
+                                <div>
+                                    <img src="./Assets/images/image8.jpg" class="library-img">
+                                </div>
+                                <div>
+                                <p class="library-text1">Despacito</p>
+                                <p class="library-text2">Despacito</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="library-text-main">
+                            Despacito
+                        </div>
+                        <div class="library-component">
+                            <div class="library-recordMain">
+                                <i class="bi bi-music-note-beamed"></i>
+                                1234567890
+                            </div>
+                            <div>
+                                <i class="bi bi-clock"></i>
+                                0:33
+                            </div>
+
+                        </div>
+                        <div>
+                            <i class="bi bi-heart library-icon"></i>
+                            <i class="bi bi-three-dots-vertical"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="now-playing" id="now-playing">
+                 
+                        <div>
+                            <img src="./Assets/images/mj.png" class="now-playing-img">
+                        
+                        </div>
+                    <div>
+                        <div class="audio-properties">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart now-playingIcon1" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                                <a href="./Assets/audio/Nathaniel Bassey - This God Is Too Good [Feat. Micah Stampley].mp3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                    </svg>
+                                </a>
+                                   
+                            </div>
+                            <div class="audio-properties-sub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-skip-start-fill now-playingIcon1" viewBox="0 0 16 16">
+                                    <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0V4z"/>
+                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-rewind now-playingIcon2" viewBox="0 0 16 16">
+                                    <path d="M9.196 8 15 4.633v6.734L9.196 8Zm-.792-.696a.802.802 0 0 0 0 1.392l6.363 3.692c.52.302 1.233-.043 1.233-.696V4.308c0-.653-.713-.998-1.233-.696L8.404 7.304Z"/>
+                                    <path d="M1.196 8 7 4.633v6.734L1.196 8Zm-.792-.696a.802.802 0 0 0 0 1.392l6.363 3.692c.52.302 1.233-.043 1.233-.696V4.308c0-.653-.713-.998-1.233-.696L.404 7.304Z"/>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pause now-playingIcon2" viewBox="0 0 16 16">
+                                    <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-fast-forward now-playingIcon1" viewBox="0 0 16 16">
+                                    <path d="M6.804 8 1 4.633v6.734L6.804 8Zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+                                    <path d="M14.804 8 9 4.633v6.734L14.804 8Zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-skip-end-fill" viewBox="0 0 16 16">
+                                    <path d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.693 3.3 4 3.678 4 4.308v7.384c0 .63.692 1.01 1.233.697L11.5 8.753V12a.5.5 0 0 0 1 0V4z"/>
+                                  </svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-shuffle now-playingIcon1" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"/>
+                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-repeat" viewBox="0 0 16 16">
+                                    <path d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192Zm3.81.086a.5.5 0 0 1 .67.225A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67Z"/>
+                                  </svg>
+                            </div>
+
+                        </div>
+
+                        <div class="audio-area" >
+                            <audio controls autoplay class="music" id="music">
+                                <source src="./Assets/audio/Nathaniel Bassey - This God Is Too Good [Feat. Micah Stampley].mp3" type="audio/mpeg" class="ppp">
+                                <source src="./Assets/audio/Nathaniel-Bassey-The-King-Is-Coming-Audio-(JustNaija.com).mp3">
+                                <source src="./Assets/audio/[Waploaded]_Tatiana_Manaois_-_Like_You-1518158965.mp3">
+                                <source src="./Assets/audio/by Nathaniel Bassey and Lovesong - Casting Crowns by Nathaniel Bassey and Lovesong.mp3">
+                                <source src="./Assets/audio/Eben_No_One_Like_You_Ft_Nathaniel_Bassey_9jaflaver.com_.mp3">
+                                <source src="./Assets/audio/Hallelujah Eh - Nathaniel Bassey.mp3">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="mobile-container">
+        <div class="mobile-nav" >
+            <p class="nav-text">Music</p>
+            <p>Trending</p>
+        </div>
+
+        <div class="search-holder">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search search-icon" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+            <input type="text" placeholder="search" class="search">
+        </div>
+        <div class="trendingSongs" data-src="./Assets/audio/Nathaniel Bassey - This God Is Too Good [Feat. Micah Stampley].mp3">
+            <div class="trendingSongs-cont">
+                <div>
+                    <img src="./Assets/images/image10.jpg" class="trendingSongs-img">
+                </div>
+                <div>
+                    <p class="trendingSongs-title">Oscroh(Pepperline)</p>
+                    <div class="trendingSongs-sub">
+                        <button class="trendingSongs-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                              </svg>
+                            Free
+                        </button>
+                        <div class="trendingSongs-artist">Shallipopi</div>
+                    </div>
+                    <div class="trendingSongs-activity">
+                        <div class="trendingSongs-reaction">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-heart mobile-reaction" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                              </svg>
+                            20k
+                        </div>
+                        <div>
+                            <div class="share">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-share-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                  </svg>
+                                414
+                            </div>
+                        </div>
+                        <div>
+                            <div class="comment">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chat-left-dots-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                620
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="trendingSongs-activitiesSub">
+                    <div class="arrow-holder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short arrow" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                          </svg>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical dots" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="trendingSongs" data-src="./Assets/audio/Nathaniel-Bassey-The-King-Is-Coming-Audio-(JustNaija.com).mp3" type="audio/mpeg">
+            <div class="trendingSongs-cont">
+                <div>
+                    <img src="./Assets/images/image11.jpg" class="trendingSongs-img">
+                </div>
+                <div>
+                    <p class="trendingSongs-title">Oscroh(Pepperline)</p>
+                    <div class="trendingSongs-sub">
+                        <button class="trendingSongs-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                              </svg>
+                            Free
+                        </button>
+                        <div class="trendingSongs-artist">Shallipopi</div>
+                    </div>
+                    <div class="trendingSongs-activity">
+                        <div class="trendingSongs-reaction">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-heart mobile-reaction" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                              </svg>
+                            20k
+                        </div>
+                        <div>
+                            <div class="share">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-share-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                  </svg>
+                                414
+                            </div>
+                        </div>
+                        <div>
+                            <div class="comment">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chat-left-dots-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                620
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="trendingSongs-activitiesSub">
+                    <div class="arrow-holder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short arrow" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                          </svg>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical dots" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+        <div class="trendingSongs" data-src="./Assets/audio/[Waploaded]_Tatiana_Manaois_-_Like_You-1518158965.mp3" type="audio/mpeg">
+            <div class="trendingSongs-cont">
+                <div>
+                    <img src="./Assets/images/image9.jpg" class="trendingSongs-img">
+                </div>
+                <div>
+                    <p class="trendingSongs-title">Oscroh(Pepperline)</p>
+                    <div class="trendingSongs-sub">
+                        <button class="trendingSongs-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                              </svg>
+                            Free
+                        </button>
+                        <div class="trendingSongs-artist">Shallipopi</div>
+                    </div>
+                    <div class="trendingSongs-activity">
+                        <div class="trendingSongs-reaction">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-heart mobile-reaction" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                              </svg>
+                            20k
+                        </div>
+                        <div>
+                            <div class="share">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-share-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                  </svg>
+                                414
+                            </div>
+                        </div>
+                        <div>
+                            <div class="comment">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chat-left-dots-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                620
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="trendingSongs-activitiesSub">
+                    <div class="arrow-holder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short arrow" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                          </svg>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical dots" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+        <div class="trendingSongs" data-src="./Assets/audio/Eben_No_One_Like_You_Ft_Nathaniel_Bassey_9jaflaver.com_.mp3" type="audio/mpeg">
+            <div class="trendingSongs-cont">
+                <div>
+                    <img src="./Assets/images/image8.jpg" class="trendingSongs-img">
+                </div>
+                <div>
+                    <p class="trendingSongs-title">Oscroh(Pepperline)</p>
+                    <div class="trendingSongs-sub">
+                        <button class="trendingSongs-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                              </svg>
+                            Free
+                        </button>
+                        <div class="trendingSongs-artist">Shallipopi</div>
+                    </div>
+                    <div class="trendingSongs-activity">
+                        <div class="trendingSongs-reaction">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-heart mobile-reaction" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                              </svg>
+                            20k
+                        </div>
+                        <div>
+                            <div class="share">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-share-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                  </svg>
+                                414
+                            </div>
+                        </div>
+                        <div>
+                            <div class="comment">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chat-left-dots-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                620
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="trendingSongs-activitiesSub">
+                    <div class="arrow-holder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short arrow" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                          </svg>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical dots" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+        <div class="trendingSongs" data-src="./Assets/audio/Hallelujah Eh - Nathaniel Bassey.mp3" type="audio/mpeg">
+            <div class="trendingSongs-cont">
+                <div>
+                    <img src="./Assets/images/image7.jpg" class="trendingSongs-img">
+                </div>
+                <div>
+                    <p class="trendingSongs-title">Oscroh(Pepperline)</p>
+                    <div class="trendingSongs-sub">
+                        <button class="trendingSongs-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                              </svg>
+                            Free
+                        </button>
+                        <div class="trendingSongs-artist">Shallipopi</div>
+                    </div>
+                    <div class="trendingSongs-activity">
+                        <div class="trendingSongs-reaction">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-heart mobile-reaction" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                              </svg>
+                            20k
+                        </div>
+                        <div>
+                            <div class="share">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-share-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                  </svg>
+                                414
+                            </div>
+                        </div>
+                        <div>
+                            <div class="comment">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chat-left-dots-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                620
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="trendingSongs-activitiesSub">
+                    <div class="arrow-holder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short arrow" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                          </svg>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical dots" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+       <div class="trendingSongs" data-src="./Assets/audio/[Waploaded]_Tatiana_Manaois_-_Like_You-1518158965.mp3" type="audio/mpeg">
+            <div class="trendingSongs-cont">
+                <div>
+                    <img src="./Assets/images/image11.jpg" class="trendingSongs-img">
+                </div>
+                <div>
+                    <p class="trendingSongs-title">Oscroh(Pepperline)</p>
+                    <div class="trendingSongs-sub">
+                        <button class="trendingSongs-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                              </svg>
+                            Free
+                        </button>
+                        <div class="trendingSongs-artist">Shallipopi</div>
+                    </div>
+                    <div class="trendingSongs-activity">
+                        <div class="trendingSongs-reaction">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-heart mobile-reaction" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                              </svg>
+                            20k
+                        </div>
+                        <div>
+                            <div class="share">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-share-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                  </svg>
+                                414
+                            </div>
+                        </div>
+                        <div>
+                            <div class="comment">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chat-left-dots-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                620
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="trendingSongs-activitiesSub">
+                    <div class="arrow-holder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short arrow" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                          </svg>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical dots" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+        <div class="trendingSongs" data-src="./Assets/audio/by Nathaniel Bassey and Lovesong - Casting Crowns by Nathaniel Bassey and Lovesong.mp3" type="audio/mpeg">
+            <div class="trendingSongs-cont">
+                <div>
+                    <img src="./Assets/images/image9.jpg" class="trendingSongs-img">
+                </div>
+                <div>
+                    <p class="trendingSongs-title">Oscroh(Pepperline)</p>
+                    <div class="trendingSongs-sub">
+                        <button class="trendingSongs-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                              </svg>
+                            Free
+                        </button>
+                        <div class="trendingSongs-artist">Shallipopi</div>
+                    </div>
+                    <div class="trendingSongs-activity">
+                        <div class="trendingSongs-reaction">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-heart mobile-reaction" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                              </svg>
+                            20k
+                        </div>
+                        <div>
+                            <div class="share">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-share-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                  </svg>
+                                414
+                            </div>
+                        </div>
+                        <div>
+                            <div class="comment">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chat-left-dots-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                620
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="trendingSongs-activitiesSub">
+                    <div class="arrow-holder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short arrow" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                          </svg>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical dots" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+        <div class="trendingSongs" data-src="./Assets/audio/Eben_No_One_Like_You_Ft_Nathaniel_Bassey_9jaflaver.com_.mp3">
+            <div class="trendingSongs-cont">
+                <div>
+                    <img src="./Assets/images/image10.jpg" class="trendingSongs-img">
+                </div>
+                <div>
+                    <p class="trendingSongs-title">Oscroh(Pepperline)</p>
+                    <div class="trendingSongs-sub">
+                        <button class="trendingSongs-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                              </svg>
+                            Free
+                        </button>
+                        <div class="trendingSongs-artist">Shallipopi</div>
+                    </div>
+                    <div class="trendingSongs-activity">
+                        <div class="trendingSongs-reaction">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-heart mobile-reaction" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                              </svg>
+                            20k
+                        </div>
+                        <div>
+                            <div class="share">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-share-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                  </svg>
+                                414
+                            </div>
+                        </div>
+                        <div>
+                            <div class="comment">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chat-left-dots-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                620
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="trendingSongs-activitiesSub">
+                    <div class="arrow-holder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short arrow" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                          </svg>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical dots" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+        <div class="trendingSongs" data-src="./Assets/audio/Nathaniel-Bassey-The-King-Is-Coming-Audio-(JustNaija.com).mp3">
+            <div class="trendingSongs-cont">
+                <div>
+                    <img src="./Assets/images/image7.jpg" class="trendingSongs-img">
+                </div>
+                <div>
+                    <p class="trendingSongs-title">Oscroh(Pepperline)</p>
+                    <div class="trendingSongs-sub">
+                        <button class="trendingSongs-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                              </svg>
+                            Free
+                        </button>
+                        <div class="trendingSongs-artist">Shallipopi</div>
+                    </div>
+                    <div class="trendingSongs-activity">
+                        <div class="trendingSongs-reaction">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-heart mobile-reaction" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                              </svg>
+                            20k
+                        </div>
+                        <div>
+                            <div class="share">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-share-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                  </svg>
+                                414
+                            </div>
+                        </div>
+                        <div>
+                            <div class="comment">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chat-left-dots-fill mobile-reaction" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                620
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="trendingSongs-activitiesSub">
+                    <div class="arrow-holder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short arrow" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                          </svg>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical dots" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="now-playing" id="now-playing">
+                 
+            <div>
+                <img src="./Assets/images/mj.png" class="mobile-playing-img">
+            </div>
+
+            <div>
+                <div class="mobile-audio" >
+                    <audio controls autoplay class="Mymusic" id="Mymusic">
+                        <source src="./Assets/audio/Nathaniel Bassey - This God Is Too Good [Feat. Micah Stampley].mp3" type="audio/mpeg">
+                        <source src="./Assets/audio/Nathaniel-Bassey-The-King-Is-Coming-Audio-(JustNaija.com).mp3" type="audio/mpeg">
+                        <source src="./Assets/audio/[Waploaded]_Tatiana_Manaois_-_Like_You-1518158965.mp3" type="audio/mpeg">
+                        <source src="./Assets/audio/by Nathaniel Bassey and Lovesong - Casting Crowns by Nathaniel Bassey and Lovesong.mp3" type="audio/mpeg">
+                        <source src="./Assets/audio/Eben_No_One_Like_You_Ft_Nathaniel_Bassey_9jaflaver.com_.mp3" type="audio/mpeg">
+                        <source src="./Assets/audio/Hallelujah Eh - Nathaniel Bassey.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./Assets/js-file/main.js"></script>
+</body>
+</html>
